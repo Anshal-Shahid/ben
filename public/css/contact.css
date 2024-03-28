@@ -432,9 +432,8 @@ nav ul li:hover {
 
 
 
-
-
 /* section */
+
 .form-section {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -473,12 +472,26 @@ nav ul li:hover {
     font-size: 1rem;
 }
 
-.info a:hover {}
+
 
 .info i {
     display: inline;
     position: relative;
     bottom: .59rem;
+    font-size: 1.6rem;
+    text-decoration: none !important    ;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.social a{
+    text-decoration: none !important;
+    font-size: 1.8rem;
+    margin-top: .5rem;
+}
+.info a i{
+    text-decoration: none !important;
 }
 
 form {
