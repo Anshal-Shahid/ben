@@ -276,10 +276,6 @@ nav ul li:hover {
         font-size: 3rem;
     }
 
-    #ul-2 :active {
-        background-color: rgb(159, 186, 209);
-
-    }
 
     .content {
         margin-top: 8rem;
@@ -412,20 +408,11 @@ nav ul li:hover {
     color: var(--primary-color);
 }
 
-.li:active {
-    /* background-color: #1c6765; */
-}
 
 .nav a {
     text-decoration: none;
 }
 
-@media (max-width:850px) {
-
-    .nav {
-        /* display: block; */
-    }
-}
 
 
 
@@ -439,6 +426,7 @@ display: flex;
 justify-content: center;
 width: 100%;
 margin-bottom: 1rem;
+/* padding: 0 1rem; */
 }
 
 .cards {
@@ -556,14 +544,15 @@ margin-bottom: 1rem;
     height: 2.5rem;
     color: #0F3F3D;
     background-color: #e2e5e2;
-    /* background-color: var(--secondary-color);
-    color: var(--primary-color); */
-    /* border: .2px solid var(--primary-color); */
+   
 
     left: 3rem;
 }
 
-
+.box button:hover{
+    background-color: #155755b3;
+    color: var(--primary-color);
+}
 
 .quote {
     font-weight: 900;
@@ -593,11 +582,31 @@ margin-bottom: 1rem;
         font-size: .95rem;
     }
 }
-
-@media (max-width:800px) {
-    .box p {
-        font-size: .87rem;
+@media (max-width:860px) {
+    .cards {
+        grid-template-columns: 1fr;
     }
+    .box {
+        height: 65vh;
+    }
+    .box-1,
+    .box-2,
+    .box-3 {
+        background-position: unset;
+    }
+    .box p {
+        height: 40vh;
+        font-size: 1.4rem;
+    }
+    .cards {
+        padding: 2rem 3rem;
+
+    }
+}
+@media (max-width:800px) {
+    /* .box p {
+        font-size: .87rem;
+    } */
     .quote{
         font-size: .9rem;
         padding: 1rem 3rem;
@@ -609,16 +618,14 @@ margin-bottom: 1rem;
 }
 
 @media (max-width:700px) {
-    .box p {
+    /* .box p {
         font-size: .82rem;
-    }
+    } */
    
 }
 
 @media (max-width:670px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
+   
 
     .box {
         height: 65vh;
@@ -645,21 +652,37 @@ margin-bottom: 1rem;
 
 @media (max-width:586px) {
     .box p {
-        font-size: 1rem;
+        font-size: 1.21rem;
+        height: 42vh;
+
     }
     .quote{
         font-size: .85rem;
         padding: 1rem 2rem;
 
     }
+    .box,.box-color{
+        height: 68vh;
+    }
 }
+@media (max-width:500px) {
+    .box p{
+        font-size: 1.07rem;
+        height: 46vh;
 
+    }
+}
 @media (max-width:422px) {
     .box p {
-        font-size: .82rem;
-        height: 42vh;
+        font-size: 1.07rem;
+        height: 45vh;
+        font-weight: 900;
     }
+   
+    .cards{
+        padding: 2rem 1.5rem;
 
+    }
     .box-fullContent {
         padding: 1rem .8rem;
 
@@ -668,6 +691,44 @@ margin-bottom: 1rem;
     .box button {
         width: 9rem;
         height: 2.1rem;
+    }
+    .box,.box-color{
+        height: 68vh;
+    }
+    .hero{
+        min-height: 80vh;
+    }
+}
+@media (max-width:360px) {
+    .cards{
+        padding: 2rem .7rem;
+
+    }
+    .box p{
+        font-size: .95rem;
+    }
+    .box,.box-color{
+        height: 69vh;
+    }
+}
+@media (max-width:300px) {
+   
+    .box p{
+        font-size: .8rem;
+    }
+    .box p {
+        font-size: .9rem;
+        height: 42vh;
+        font-weight: 900;
+    }
+    .hero-text h1{
+        font-size: 33pt;
+    }
+    #ul-2 i{
+        font-size: 2.6rem;
+    }
+    iframe{
+        width: 95%;
     }
 }
 

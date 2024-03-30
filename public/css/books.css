@@ -87,9 +87,7 @@ nav {
     right: 7rem;
 }
 
-#ul-1 {
-    /* padding: 0 8rem; */
-}
+
 
 nav ul {
     display: flex;
@@ -284,10 +282,6 @@ nav ul li:hover {
 
     }
 
-    #ul-2 :active {
-        background-color: rgb(159, 186, 209);
-
-    }
 
     .content {
         margin-top: 8rem;
@@ -393,6 +387,14 @@ nav ul li:hover {
 
 }
 
+@media (max-width:300px) {
+    #ul-2 i{
+        font-size: 2.6rem;
+    }
+    .hero-text h1{
+        font-size: 33pt;
+    }
+}
 /* responsive nav */
 
 .nav {
@@ -431,12 +433,7 @@ nav ul li:hover {
     text-decoration: none;
 }
 
-@media (max-width:850px) {
 
-    .nav {
-        /* display: block; */
-    }
-}
 
 
 
@@ -495,7 +492,7 @@ footer p {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: 'Courier New', Courier, monospace;
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 4rem;
     border-top: 1px solid var(--secondary-color);
 }
 
@@ -566,7 +563,7 @@ footer p {
 
 .book h2 {
     font-size: 1.7rem;
-    font-family: cormorant;
+    font-family: roboto;
     text-align: center;
     margin-top: .5rem;
     height: 29vh;
@@ -598,6 +595,9 @@ footer p {
     /* margin-bottom: 1rem; */
 
 }
+.book button:hover{
+    background-color: #134b49e1;
+}
 
 @media (max-width:1100px) {
 
@@ -620,7 +620,7 @@ footer p {
 
 }
 
-@media (max-width:760px) {
+@media (max-width:860px) {
     .quote {
         margin-right: 1.3rem;
     }
@@ -717,6 +717,11 @@ footer p {
 
 }
 
+@media (max-width:422px) {
+    .hero{
+        min-height: 80vh;
+    }
+}
 @media (max-width:400px) {
     .book {
         height: 110vh;
@@ -740,6 +745,6 @@ footer p {
     }
 
     .book h2 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 }

@@ -243,8 +243,6 @@ nav ul li:hover {
 @media (max-width:860px) {
     #ul-2 :nth-child(1) {
         display: block;
-
-
     }
 
     #ul-1 {
@@ -278,15 +276,8 @@ nav ul li:hover {
         position: relative;
         top: 1rem;
         padding-right: 1rem;
-
         font-size: 3rem;
-
-    }
-
-    #ul-2 :active {
-        background-color: rgb(159, 186, 209);
-
-    }
+    } 
 
     .content {
         margin-top: 8rem;
@@ -344,6 +335,9 @@ nav ul li:hover {
 }
 
 @media (max-width:430px) {
+    .hero{
+        min-height: 80vh;
+    }
     .img-1 {
         top: unset;
         bottom: 6vh;
@@ -387,6 +381,15 @@ nav ul li:hover {
 
 }
 
+
+@media (max-width:300px) {
+    #ul-2 i{
+        font-size: 2.6rem;
+    }
+    .hero-text h1{
+        font-size: 33pt;
+    }
+}
 /* responsive nav */
 
 .nav {

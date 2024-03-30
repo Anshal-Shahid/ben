@@ -281,10 +281,7 @@ nav ul li:hover {
 
     }
 
-    #ul-2 :active {
-        background-color: rgb(159, 186, 209);
-
-    }
+  
 
     .content {
         margin-top: 8rem;
@@ -343,7 +340,9 @@ nav ul li:hover {
 
 @media (max-width:430px) {
   
-
+    .hero{
+        min-height: 80vh;
+    }
     .img-1 {
         top: unset;
         bottom: 6vh;
@@ -385,6 +384,14 @@ nav ul li:hover {
     }
 
 
+}
+@media (max-width:300px) {
+    #ul-2 i{
+        font-size: 2.6rem;
+    }
+    .hero-text h1{
+        font-size: 33pt;
+    }
 }
 
 /* responsive nav */
