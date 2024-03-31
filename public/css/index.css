@@ -470,6 +470,12 @@ margin-bottom: 1rem;
     transition: transform 0.3s ease;
     justify-self: center;
 }
+.box-content p a{
+    /* text-decoration: none; */
+    color: var(--primary-color);
+    /* font-weight: 900; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 .box:hover {
     transform: scale(1.04);
