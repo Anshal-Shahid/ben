@@ -430,20 +430,34 @@ margin-bottom: 1rem;
 /* padding: 0 1rem; */
 }
 
+.services{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 5.5rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    /* border-top: .5px solid var(--secondary-color); */
+    padding-top: 2.5rem;
+}
+
 .cards {
 
     background-color: var(--primary-color);
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
     padding: 2rem 1.5rem;
     align-items: center;
+    row-gap: 3rem;
+
 }
 
 .box {
-    background-color: #84cdda;
-    width: 100%;
+    background-color: var(--primary-color);
+    width: 85%;
     height: 86vh;
     border-radius: 1rem;
     display: flex;
@@ -454,6 +468,7 @@ margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
+    justify-self: center;
 }
 
 .box:hover {
@@ -473,6 +488,13 @@ margin-bottom: 1rem;
     border-radius: 1rem;
     transition: transform 0.6s ease;
 
+
+}
+.box-0 {
+    background-image: url(../img/img-10.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -516,7 +538,7 @@ margin-bottom: 1rem;
 
 .box p {
     font-family: cormorant;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 900;
     height: 61vh;
 
@@ -526,9 +548,10 @@ margin-bottom: 1rem;
 
 .box h1 {
     
-    font-size: 2.9rem;
+    font-size: 3rem;
     color: var(--primary-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-weight: 700; */
 }
 
 .box button {
@@ -580,7 +603,7 @@ margin-bottom: 1rem;
 
 @media (max-width:960px) {
     .box p {
-        font-size: .95rem;
+        font-size: 1.05rem;
     }
 }
 @media (max-width:860px) {
@@ -588,10 +611,10 @@ margin-bottom: 1rem;
         grid-template-columns: 1fr;
     }
     .box {
-        height: 67vh;
+        height: 74vh;
     }
     .box-color{
-        height: 67vh;
+        height: 74vh;
     }
     .box-1,
     .box-2,
@@ -599,7 +622,7 @@ margin-bottom: 1rem;
         background-position: unset;
     }
     .box p {
-        height: 40vh;
+        height: 46vh;
         font-size: 1.2rem;
     }
     .cards {
@@ -622,9 +645,10 @@ margin-bottom: 1rem;
 }
 
 @media (max-width:700px) {
-    /* .box p {
-        font-size: .82rem;
-    } */
+    .box p {
+        height: 46vh;
+        font-size: 1.2rem;
+    }
    
 }
 
@@ -639,7 +663,7 @@ margin-bottom: 1rem;
 
     .box p {
         min-height: 43vh;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
     
     .box-1,
@@ -655,9 +679,12 @@ margin-bottom: 1rem;
 }
 
 @media (max-width:586px) {
+    .box{
+        width: 94%;
+    }
     .box p {
         min-height: 47vh;
-        font-size: 1.1rem;
+        /* font-size: 1.1rem; */
     }
     .box,.box-color {
         min-height: 73vh;
@@ -672,27 +699,34 @@ margin-bottom: 1rem;
     }
 }
 @media (max-width:500px) {
-    .box p {
-        min-height: 50vh;
-        font-size: 1.01rem;
+    .cards{
+        padding: 2rem 1.2rem;
+
     }
+    .box p {
+        min-height: 52vh;
+        font-size: 1.04rem;
+    }
+    .box{
+        width: 97%;
+    }
+
+  
     .box,.box-color {
-        min-height: 75vh;
+        min-height: 78vh;
     }
 }
 @media (max-width:422px) {
     .box p {
-        min-height: 50vh;
-        font-size: 1.01rem;
+        min-height: 53vh;
+        font-size: .97rem;
     }
-    .box,.box-color {
-        min-height: 75vh;
+    .box{
+        width: 100%;
     }
    
-    .cards{
-        padding: 2rem 1.5rem;
-
-    }
+   
+   
     .box-fullContent {
         padding: 1rem .8rem;
 
@@ -702,9 +736,7 @@ margin-bottom: 1rem;
         width: 9rem;
         height: 2.1rem;
     }
-    .box,.box-color{
-        height: 68vh;
-    }
+  
     .hero{
         min-height: 95vh;
     }
@@ -714,20 +746,24 @@ margin-bottom: 1rem;
         padding: 2rem .7rem;
 
     }
+    .box,.box-color{
+        min-height: 80vh;
+    }
     .box p{
         font-size: .95rem;
+        min-height: 55vh;
     }
-    .box,.box-color{
-        height: 69vh;
-    }
+  
 }
 @media (max-width:300px) {
-   
-    .box p{
-        font-size: .8rem;
+    .cards{
+        padding: 2rem .6rem;
+
     }
+   
+  
     .box p {
-        font-size: .9rem;
+        font-size: .85rem;
         height: 42vh;
         font-weight: 900;
     }
