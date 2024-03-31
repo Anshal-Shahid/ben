@@ -183,7 +183,7 @@ nav ul li:hover {
 
 .hero-text h2 {
     font-family: cormorant;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color: #0b3231;
     text-align: center;
@@ -339,7 +339,7 @@ nav ul li:hover {
 
 @media (max-width:430px) {
     .hero{
-        min-height: 80vh;
+        min-height: 95vh;
     }
 
     .img-1 {
@@ -464,8 +464,8 @@ section .h1 h1 {
 
 .plan {
     border: 2px solid var(--secondary-color);
-    min-height: 30rem;
-    width: 34vw;
+    min-height: 34rem;
+    width: 37vw;
     overflow: hidden;
     border-radius: 1rem;
     font-size: 1rem;
@@ -503,8 +503,8 @@ section .h1 h1 {
 }
 
 .plan p {
-    font-size: 1.22em;
-    width: 83%;
+    font-size: 1.06em;
+    width: 89%;
     position: relative;
 
     font-family: libre;
@@ -533,18 +533,18 @@ section .h1 h1 {
 
 @media (max-width:1025px) {
     .plan p {
-        width: 87%;
-        height: 26rem;
-        font-size: 1.16em;
+        width: 89%;
+        height: 27.5rem;
+        font-size: 1.015em;
 
     }
 }
 
 @media (max-width:900px) {
     .plan p {
-        width: 91%;
-        height: 26rem;
-        font-size: 1.13em;
+        width: 89%;
+        height: 27.5rem;
+        font-size: 1.015em;
 
     }
 
@@ -560,12 +560,14 @@ section .h1 h1 {
     }
 
     .plan {
-        width: 81%;
+        width: 75%;
     }
 
     .plan p {
-        font-size: 1.2rem;
-        height: 18rem;
+        width: 89%;
+        height: 27.5rem;
+        font-size: 1.1em;
+
     }
 
     .coaching-section {
@@ -595,14 +597,15 @@ section .h1 h1 {
 
     .plan {
         width: 81%;
-        font-size: 1rem;
+        font-size: .95rem;
     }
 
-    .plan p {
-        font-size: 1.08rem;
-        height: 18rem;
-        width: 95%;
-    }
+    /* .plan p {
+        width: 89%;
+        height: 27.5rem;
+        font-size: 1.015em;
+
+    } */
 
     .coaching-section {
         padding: 1rem 3rem;
@@ -618,17 +621,18 @@ section .h1 h1 {
     .plans {
         flex-direction: column;
         align-items: center;
+        padding: 0 1rem;
     }
 
     .plan {
-        width: 94%;
+        width: 99%;
         font-size: 1rem;
     }
-
     .plan p {
-        font-size: 1.04rem;
-        height: 18.3rem;
-        width: 95%;
+        width: 92%;
+        height: 27.5rem;
+        font-size: 1.09em;
+
     }
 
     .coaching-section {
@@ -656,6 +660,7 @@ section .h1 h1 {
     .plans {
         flex-direction: column;
         align-items: center;
+        padding: 0 .5rem;
     }
 
     .plan {
@@ -664,9 +669,10 @@ section .h1 h1 {
     }
 
     .plan p {
-        font-size: 1.03rem;
-        height: 18.8rem;
-        width: 95%;
+        width: 98%;
+        height: 27.5rem;
+        font-size: 1.05em;
+
     }
 
     .coaching-section {
@@ -724,9 +730,10 @@ section .h1 h1 {
     }
 
     .plan p {
-        font-size: .97rem;
-        height:19.5rem;
-        width: 95%;
+        width: 98%;
+        height: 28rem;
+        font-size: 1.015em;
+
     }
 
     .coaching-section {
@@ -767,6 +774,7 @@ section .h1 h1 {
     .plans {
         flex-direction: column;
         align-items: center;
+        padding: 0 .5rem;
     }
 
     .plan {
@@ -775,9 +783,10 @@ section .h1 h1 {
     }
 
     .plan p {
-        font-size: .89rem;
-        height:19.5rem;
-        width: 95%;
+        width: 91%;
+        height: 28rem;
+        font-size: .96em;
+
     }
 
     .coaching-section {

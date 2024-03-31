@@ -33,22 +33,24 @@ const form = async(req, res) => {
         host: 'smtp.gmail.com',
         port:587,
         auth: {
-            user: 'anshalshahid2@gmail.com',
-            pass: 'njfcfkchlchvbdpi'
+            user: 'drmuellersvoice@gmail.com',
+            // pass: 'njfcfkchlchvbdpi'  // ryan key
+            pass:'apwafeeddebknyvv'  // cr ben key
         }
     });
     
 
     // Email options
     const info = await transporter.sendMail({
-        from: '"Sender Name" <sender@example.com>',
-        to: "anshalshahid2@gmail.com", // list of receivers
-        subject: `${subject}`, // Subject line
+        from: `"${name}"`,
+        to: "drmuellersvoice@gmail.com", // list of receivers
+        subject: `${name}`, // Subject line
         text: `${message}`, // plain text body
-        html: `<b>${message}</b>`, // html body
+        html: `<b>Subject:${subject}</b> 
+        <br><br> ${message}`, // html body
       });
       console.log("Message sent: %s", info.messageId);
-      res.json(info)
+      res.redirect("/contact")
 };
 
 module.exports= {index,books,contact,about,speaking,coaching,form}

@@ -185,7 +185,7 @@ nav ul li:hover {
 
 .hero-text h2 {
     font-family: cormorant;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color: #0b3231;
     text-align: center;
@@ -339,9 +339,8 @@ nav ul li:hover {
 }
 
 @media (max-width:430px) {
-    .hero-text h1 {
-        /* text-shadow: 2px 2px 3px  rgba(30, 30, 30, 0.834); */
-
+    .hero{
+        min-height: 95vh;
     }
 
     .img-1 {
