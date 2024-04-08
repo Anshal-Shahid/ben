@@ -438,10 +438,29 @@ margin-bottom: 1rem;
     font-size: 5.5rem;
     margin-top: 6rem;
     margin-bottom: 4rem;
-    /* border-top: .5px solid var(--secondary-color); */
+    border-top: .5px solid var(--secondary-color);
     padding-top: 2.5rem;
 }
+@media (max-width:500px) {
+    .services{
+        font-size: 4.6rem;
 
+    }
+}
+@media (max-width:400px) {
+    .services{
+        font-size: 4rem;
+        margin-bottom: 2.5rem;
+
+    }
+}
+@media (max-width:320px) {
+    .services{
+        font-size: 3.6rem;
+        margin-bottom: 2.5rem;
+
+    }
+}
 .cards {
 
     background-color: var(--primary-color);
