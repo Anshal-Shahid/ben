@@ -7,11 +7,11 @@ dotenv.config()
 const cors=require("cors")
 const bodyParser=require("body-parser")
 const {errorHandler}=require("./middlewares/errorHandler.js")
-const {connectDB}=require("./configs/connectionDB.js")
+// const {connectDB}=require("./configs/connectionDB.js")
 
 
 
-connectDB()
+// connectDB()
 
 app.use(cors())
 
